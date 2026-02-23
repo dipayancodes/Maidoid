@@ -2,201 +2,193 @@ import { html } from 'hono/html'
 
 export const ProductPage = () => {
   return html`
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Header -->
+    <section class="page-hero">
       <div class="container">
-        <p class="section-label reveal">PRODUCT</p>
-        <h1 class="page-title reveal">Maidoid One</h1>
-        <p class="page-intro reveal">A human-scale intelligent assistant, built for domestic life.</p>
+        <p class="overline reveal">PRODUCT</p>
+        <h1 class="page-hero-title reveal">Maidoid One</h1>
+        <p class="page-hero-intro reveal">The first commercially available human-scale domestic humanoid robot. Designed, engineered, and manufactured in Dubai.</p>
       </div>
     </section>
 
-    <!-- Product Hero -->
-    <section class="section-black product-hero-section">
+    <!-- Product Showcase -->
+    <section class="sect-dark product-showcase">
       <div class="container">
-        <div class="product-hero-visual reveal">
-          <div class="product-render">
-            <svg viewBox="0 0 400 600" fill="none" stroke="white" stroke-width="0.6" opacity="0.85">
-              <!-- Full humanoid render - front view -->
-              <!-- Head -->
-              <ellipse cx="200" cy="70" rx="38" ry="45"/>
-              <ellipse cx="185" cy="60" rx="5" ry="4" opacity="0.6"/>
-              <ellipse cx="215" cy="60" rx="5" ry="4" opacity="0.6"/>
-              <path d="M192 80 Q200 85 208 80" opacity="0.4"/>
-              <!-- Face plate line -->
-              <path d="M170 45 Q200 35 230 45" stroke-dasharray="2 3" opacity="0.3"/>
-              
-              <!-- Neck -->
-              <path d="M188 115 L188 135 M212 115 L212 135"/>
-              <ellipse cx="200" cy="125" rx="14" ry="6" opacity="0.3"/>
-              
-              <!-- Shoulders & Torso -->
-              <path d="M140 145 Q200 130 260 145"/>
-              <path d="M145 145 L150 290 Q200 300 250 290 L255 145"/>
-              <!-- Torso center line -->
-              <line x1="200" y1="145" x2="200" y2="290" stroke-dasharray="3 5" opacity="0.15"/>
-              <!-- Chest plate -->
-              <path d="M165 160 Q200 155 235 160 L230 210 Q200 215 170 210 Z" opacity="0.15" fill="white"/>
-              <!-- Core light -->
-              <circle cx="200" cy="185" r="4" fill="white" opacity="0.3"/>
-              <circle cx="200" cy="185" r="8" opacity="0.2"/>
-              
-              <!-- Left Arm -->
-              <path d="M140 145 L115 200"/>
-              <circle cx="115" cy="200" r="5" opacity="0.3"/>
-              <path d="M115 200 L105 280"/>
-              <circle cx="105" cy="280" r="4" opacity="0.3"/>
-              <!-- Left Hand -->
-              <path d="M105 280 L98 300"/>
-              <path d="M95 298 L92 310 M97 300 L95 314 M100 301 L99 314 M103 300 L103 312"/>
-              
-              <!-- Right Arm -->
-              <path d="M260 145 L285 200"/>
-              <circle cx="285" cy="200" r="5" opacity="0.3"/>
-              <path d="M285 200 L295 280"/>
-              <circle cx="295" cy="280" r="4" opacity="0.3"/>
-              <!-- Right Hand -->
-              <path d="M295 280 L302 300"/>
-              <path d="M305 298 L308 310 M303 300 L305 314 M300 301 L301 314 M297 300 L297 312"/>
-              
-              <!-- Hip -->
-              <path d="M155 290 Q200 305 245 290"/>
-              
-              <!-- Left Leg -->
-              <path d="M170 295 L160 400"/>
-              <circle cx="160" cy="400" r="5" opacity="0.3"/>
-              <path d="M160 400 L155 510"/>
-              <circle cx="155" cy="510" r="4" opacity="0.3"/>
-              <!-- Left Foot -->
-              <path d="M140 515 L170 515 L172 530 L138 530 Z" opacity="0.4"/>
-              
-              <!-- Right Leg -->
-              <path d="M230 295 L240 400"/>
-              <circle cx="240" cy="400" r="5" opacity="0.3"/>
-              <path d="M240 400 L245 510"/>
-              <circle cx="245" cy="510" r="4" opacity="0.3"/>
-              <!-- Right Foot -->
-              <path d="M230 515 L260 515 L262 530 L228 530 Z" opacity="0.4"/>
-              
-              <!-- Dimension lines -->
-              <line x1="80" y1="25" x2="80" y2="530" stroke-dasharray="2 4" opacity="0.15"/>
-              <line x1="75" y1="25" x2="85" y2="25" opacity="0.15"/>
-              <line x1="75" y1="530" x2="85" y2="530" opacity="0.15"/>
-              <text x="75" y="280" font-size="8" fill="white" opacity="0.3" transform="rotate(-90,75,280)">170 cm</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Specifications -->
-    <section class="section-white">
-      <div class="container">
-        <p class="section-label reveal">SPECIFICATIONS</p>
-        <h2 class="section-title reveal">Capabilities</h2>
-        <div class="product-features">
-          <div class="feature-row reveal">
-            <div class="feature-number">01</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Human-Like Walking</h3>
-              <p class="feature-text">Natural bipedal locomotion across flat surfaces, stairs, and uneven terrain. Adaptive gait adjusts to speed and environmental conditions.</p>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-number">02</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Natural Speech</h3>
-              <p class="feature-text">Conversational AI with emotional awareness. Understands context, responds naturally, and communicates in over 32 languages.</p>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-number">03</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Adaptive Learning</h3>
-              <p class="feature-text">Learns household routines, personal preferences, and environmental patterns. Continuously improves through on-device machine learning.</p>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-number">04</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Safe Home Interaction</h3>
-              <p class="feature-text">Force-limited actuators and proximity awareness ensure safe operation around children, elderly, and pets. ISO 13482 certified.</p>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-number">05</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Domestic Task Execution</h3>
-              <p class="feature-text">Cleaning, organizing, cooking assistance, laundry management, and household maintenance. Capable hands with precision grip and delicate handling.</p>
-            </div>
-          </div>
-          <div class="feature-row reveal">
-            <div class="feature-number">06</div>
-            <div class="feature-content">
-              <h3 class="feature-title">Autonomous Operation</h3>
-              <p class="feature-text">Full-day battery life with self-charging capability. Operates independently while maintaining seamless human coordination.</p>
+        <div class="product-display">
+          <div class="product-robot-wrap reveal">
+            <div class="product-robot" id="productRobot">
+              <div class="robot-glow-lg"></div>
+              <!-- Animated robot (same as hero but larger) -->
+              <div class="robot robot-lg" id="productRobotBody">
+                <div class="robot-head" id="prodRobotHead">
+                  <div class="robot-head-inner">
+                    <div class="robot-visor">
+                      <div class="robot-eye robot-eye-l"></div>
+                      <div class="robot-eye robot-eye-r"></div>
+                    </div>
+                    <div class="robot-chin"></div>
+                  </div>
+                </div>
+                <div class="robot-neck">
+                  <div class="robot-neck-ring"></div>
+                  <div class="robot-neck-ring"></div>
+                </div>
+                <div class="robot-torso">
+                  <div class="robot-chest">
+                    <div class="robot-core">
+                      <div class="robot-core-ring"></div>
+                      <div class="robot-core-dot"></div>
+                    </div>
+                    <div class="robot-chest-line robot-chest-line-l"></div>
+                    <div class="robot-chest-line robot-chest-line-r"></div>
+                  </div>
+                  <div class="robot-abdomen">
+                    <div class="robot-ab-line"></div>
+                    <div class="robot-ab-line"></div>
+                    <div class="robot-ab-line"></div>
+                  </div>
+                </div>
+                <div class="robot-arm robot-arm-l">
+                  <div class="robot-shoulder"></div>
+                  <div class="robot-upper-arm"></div>
+                  <div class="robot-elbow"></div>
+                  <div class="robot-forearm"></div>
+                  <div class="robot-hand"><div class="robot-finger"></div><div class="robot-finger"></div><div class="robot-finger"></div></div>
+                </div>
+                <div class="robot-arm robot-arm-r">
+                  <div class="robot-shoulder"></div>
+                  <div class="robot-upper-arm"></div>
+                  <div class="robot-elbow"></div>
+                  <div class="robot-forearm"></div>
+                  <div class="robot-hand"><div class="robot-finger"></div><div class="robot-finger"></div><div class="robot-finger"></div></div>
+                </div>
+                <div class="robot-legs">
+                  <div class="robot-leg robot-leg-l"><div class="robot-thigh"></div><div class="robot-knee"></div><div class="robot-shin"></div><div class="robot-foot"></div></div>
+                  <div class="robot-leg robot-leg-r"><div class="robot-thigh"></div><div class="robot-knee"></div><div class="robot-shin"></div><div class="robot-foot"></div></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technical Specs Table -->
-    <section class="section-black">
+    <!-- Key Capabilities -->
+    <section class="sect-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="overline">CAPABILITIES</p>
+          <h2 class="sect-title">What Maidoid One Can Do</h2>
+        </div>
+        <div class="capability-list">
+          <div class="capability-row reveal">
+            <div class="cap-num">01</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Human-Like Walking & Navigation</h3>
+              <p class="cap-desc">Natural bipedal locomotion across flat surfaces, stairs, slopes, and uneven terrain. Dynamic gait adjustment based on speed, payload, and surface conditions. Navigates cluttered home environments with centimeter-level precision.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">5.4</span>
+              <span class="cap-metric-unit">km/h max</span>
+            </div>
+          </div>
+          <div class="capability-row reveal">
+            <div class="cap-num">02</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Natural Speech & Conversation</h3>
+              <p class="cap-desc">Full conversational AI with emotional intelligence. Understands sarcasm, humor, urgency, and nuance. Reads facial expressions and body language to gauge intent. Communicates in over 32 languages with native-quality pronunciation.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">32+</span>
+              <span class="cap-metric-unit">languages</span>
+            </div>
+          </div>
+          <div class="capability-row reveal">
+            <div class="cap-num">03</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Adaptive Household Learning</h3>
+              <p class="cap-desc">Learns your family's routines, preferences, and patterns within days. Knows when to start cleaning, how each person likes their coffee, and which tasks are priorities. Continuously improves through on-device federated learning. No data leaves your home.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">100%</span>
+              <span class="cap-metric-unit">on-device AI</span>
+            </div>
+          </div>
+          <div class="capability-row reveal">
+            <div class="cap-num">04</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Safe Physical Interaction</h3>
+              <p class="cap-desc">Force-limited on every joint. Cannot exceed safe thresholds even under software failure. Proximity-aware speed reduction around humans and pets. Compliant actuation means the robot yields to unexpected contact rather than pushing through it.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">ISO</span>
+              <span class="cap-metric-unit">13482 certified</span>
+            </div>
+          </div>
+          <div class="capability-row reveal">
+            <div class="cap-num">05</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Precision Object Manipulation</h3>
+              <p class="cap-desc">16 degrees of freedom per hand. Handles everything from a 25kg water jug to a single sheet of paper. Pressure-sensitive fingertips provide haptic feedback for delicate operations. Tool use capability for cooking, cleaning, and basic maintenance.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">25</span>
+              <span class="cap-metric-unit">kg per arm</span>
+            </div>
+          </div>
+          <div class="capability-row reveal">
+            <div class="cap-num">06</div>
+            <div class="cap-content">
+              <h3 class="cap-title">Autonomous Operation & Charging</h3>
+              <p class="cap-desc">16 hours of continuous active operation on a single charge. Intelligent power management extends effective runtime by scheduling high-energy tasks during optimal periods. Self-navigates to charging station. Reaches 80% charge in 45 minutes.</p>
+            </div>
+            <div class="cap-metric">
+              <span class="cap-metric-val">16</span>
+              <span class="cap-metric-unit">hours active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="sect-dark">
       <div class="container container-narrow">
-        <p class="section-label-light reveal">TECHNICAL DATA</p>
-        <h2 class="section-title-light reveal">Maidoid One Specifications</h2>
-        <div class="specs-table reveal">
-          <div class="spec-row">
-            <span class="spec-key">Height</span>
-            <span class="spec-val">170 cm</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Weight</span>
-            <span class="spec-val">62 kg</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Degrees of Freedom</span>
-            <span class="spec-val">42</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Payload (per arm)</span>
-            <span class="spec-val">25 kg</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Walking Speed</span>
-            <span class="spec-val">Up to 5.4 km/h</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Battery Life</span>
-            <span class="spec-val">16 hours active</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Charge Time</span>
-            <span class="spec-val">45 minutes (80%)</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Languages</span>
-            <span class="spec-val">32+</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Safety Certification</span>
-            <span class="spec-val">ISO 13482</span>
-          </div>
-          <div class="spec-row">
-            <span class="spec-key">Operating Environment</span>
-            <span class="spec-val">Indoor residential</span>
-          </div>
+        <div class="section-header reveal">
+          <p class="overline-light">SPECIFICATIONS</p>
+          <h2 class="sect-title-light">Technical Data</h2>
+        </div>
+        <div class="spec-table reveal">
+          <div class="spec-table-row"><span class="spec-table-key">Model</span><span class="spec-table-val">Maidoid One (M1)</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Height</span><span class="spec-table-val">170 cm</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Weight</span><span class="spec-table-val">62 kg</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Frame</span><span class="spec-table-val">Titanium-Carbon Composite</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Degrees of Freedom</span><span class="spec-table-val">42 (body) + 32 (hands)</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Payload per Arm</span><span class="spec-table-val">25 kg</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Walking Speed</span><span class="spec-table-val">0 - 5.4 km/h</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Stair Navigation</span><span class="spec-table-val">Full capability, up and down</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Battery</span><span class="spec-table-val">16 hours active / 45 min to 80%</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Processor</span><span class="spec-table-val">Proprietary Neural SoC</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Languages</span><span class="spec-table-val">32+ with native pronunciation</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Vision</span><span class="spec-table-val">Stereo + LiDAR + IR + Ultrasonic</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Safety</span><span class="spec-table-val">ISO 13482, triple-redundant</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Connectivity</span><span class="spec-table-val">Wi-Fi 6E, Bluetooth 5.3, Thread</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Operating Environment</span><span class="spec-table-val">Indoor residential, 5-40 C</span></div>
+          <div class="spec-table-row"><span class="spec-table-key">Noise Level</span><span class="spec-table-val">&lt; 35 dB during operation</span></div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="section-white cta-section">
+    <section class="sect-cta">
       <div class="container">
-        <h2 class="cta-headline reveal">Experience Maidoid One</h2>
-        <p class="cta-sub reveal">Schedule a private demonstration at our Dubai facility.</p>
-        <a href="/contact" class="btn btn-dark reveal">REQUEST PRIVATE DEMO</a>
+        <div class="cta-block reveal">
+          <h2 class="cta-title">Experience Maidoid One</h2>
+          <p class="cta-text">Schedule a private demonstration at our Dubai facility or request detailed product documentation.</p>
+          <div class="cta-actions">
+            <a href="/contact" class="btn btn-white">REQUEST PRIVATE DEMO<span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
       </div>
     </section>
   `

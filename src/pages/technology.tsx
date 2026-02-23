@@ -2,255 +2,169 @@ import { html } from 'hono/html'
 
 export const TechnologyPage = () => {
   return html`
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Header -->
+    <section class="page-hero">
       <div class="container">
-        <p class="section-label reveal">TECHNOLOGY</p>
-        <h1 class="page-title reveal">Engineering the<br>Next Generation</h1>
-        <p class="page-intro reveal">Four integrated systems working in unison to create a machine that moves, thinks, sees, and feels like a human.</p>
+        <p class="overline reveal">TECHNOLOGY</p>
+        <h1 class="page-hero-title reveal">Engineering Beyond<br>Human Limitation</h1>
+        <p class="page-hero-intro reveal">Four proprietary systems. One unified intelligence. Every component designed from first principles for domestic environments.</p>
       </div>
     </section>
 
-    <!-- Mechanical Architecture -->
-    <section class="section-white">
+    <!-- System 1 -->
+    <section class="sect-light">
       <div class="container">
-        <div class="tech-detail-block">
-          <div class="tech-detail-content reveal">
-            <p class="section-label">01</p>
-            <h2 class="tech-detail-title">Mechanical Architecture</h2>
-            <p class="tech-detail-text">The Maidoid skeletal system comprises 42 degrees of freedom across a lightweight titanium-carbon composite frame. Each joint is driven by proprietary linear actuators delivering human-equivalent torque at one-third the weight.</p>
-            <ul class="tech-specs">
-              <li class="tech-spec-item">
-                <span class="spec-label">DEGREES OF FREEDOM</span>
-                <span class="spec-value">42</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">FRAME MATERIAL</span>
-                <span class="spec-value">Titanium-Carbon Composite</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">TOTAL MASS</span>
-                <span class="spec-value">62 kg</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">PAYLOAD CAPACITY</span>
-                <span class="spec-value">25 kg per arm</span>
-              </li>
-            </ul>
+        <div class="tech-block reveal">
+          <div class="tech-block-header">
+            <span class="tech-block-num">01</span>
+            <span class="tech-block-tag">MECHANICAL</span>
           </div>
-          <div class="tech-detail-visual reveal">
-            <div class="tech-diagram">
-              <svg viewBox="0 0 300 400" fill="none" stroke="currentColor" stroke-width="0.8">
-                <!-- Head -->
-                <ellipse cx="150" cy="50" rx="30" ry="35"/>
-                <circle cx="140" cy="44" r="4"/>
-                <circle cx="160" cy="44" r="4"/>
-                <line x1="145" y1="58" x2="155" y2="58"/>
-                <!-- Neck -->
-                <line x1="150" y1="85" x2="150" y2="105"/>
-                <!-- Torso -->
-                <path d="M110 105 L190 105 L185 220 L115 220 Z"/>
-                <line x1="150" y1="105" x2="150" y2="220" stroke-dasharray="4 4" opacity="0.3"/>
-                <!-- Arms -->
-                <line x1="110" y1="110" x2="70" y2="170"/>
-                <line x1="70" y1="170" x2="60" y2="240"/>
-                <circle cx="70" cy="170" r="4" fill="currentColor" opacity="0.3"/>
-                <line x1="190" y1="110" x2="230" y2="170"/>
-                <line x1="230" y1="170" x2="240" y2="240"/>
-                <circle cx="230" cy="170" r="4" fill="currentColor" opacity="0.3"/>
-                <!-- Hands -->
-                <ellipse cx="58" cy="248" rx="8" ry="12"/>
-                <ellipse cx="242" cy="248" rx="8" ry="12"/>
-                <!-- Legs -->
-                <line x1="130" y1="220" x2="120" y2="310"/>
-                <line x1="120" y1="310" x2="115" y2="380"/>
-                <circle cx="120" cy="310" r="4" fill="currentColor" opacity="0.3"/>
-                <line x1="170" y1="220" x2="180" y2="310"/>
-                <line x1="180" y1="310" x2="185" y2="380"/>
-                <circle cx="180" cy="310" r="4" fill="currentColor" opacity="0.3"/>
-                <!-- Feet -->
-                <path d="M100 378 L130 378 L132 390 L98 390 Z"/>
-                <path d="M170 378 L200 378 L202 390 L168 390 Z"/>
-                <!-- Joint indicators -->
-                <circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5"/>
-                <circle cx="190" cy="110" r="3" fill="currentColor" opacity="0.5"/>
-                <circle cx="130" cy="220" r="3" fill="currentColor" opacity="0.5"/>
-                <circle cx="170" cy="220" r="3" fill="currentColor" opacity="0.5"/>
-              </svg>
+          <div class="tech-block-split">
+            <div class="tech-block-main">
+              <h2 class="tech-block-title">Mechanical Architecture</h2>
+              <p class="tech-block-text">The Maidoid skeletal system is built on a titanium-carbon composite frame that delivers human-equivalent strength at one-third the weight of conventional robotic systems. Each of 42 joints is driven by proprietary linear actuators that combine electric and hydraulic principles for smooth, silent operation.</p>
+              <p class="tech-block-text">The hand mechanism alone contains 16 degrees of freedom, enabling everything from a firm grip on a heavy pan to the delicate handling of a wine glass. All joints feature compliant actuation, meaning they yield under unexpected force rather than resist it, a critical safety feature for domestic operation.</p>
+              <p class="tech-block-text">Unlike industrial robots designed for repetitive tasks in controlled environments, Maidoid's mechanical design accounts for the unpredictable nature of homes: uneven floors, cluttered spaces, stairs, soft carpets, and the constant presence of humans and pets.</p>
+            </div>
+            <div class="tech-block-specs">
+              <div class="spec-item">
+                <span class="spec-val">42</span>
+                <span class="spec-key">Degrees of Freedom</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">62kg</span>
+                <span class="spec-key">Total Mass</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">170cm</span>
+                <span class="spec-key">Height</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">25kg</span>
+                <span class="spec-key">Payload Per Arm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">16</span>
+                <span class="spec-key">Hand DOF</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">0.01mm</span>
+                <span class="spec-key">Manufacturing Tolerance</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Motion Intelligence -->
-    <section class="section-black">
+    <!-- System 2 -->
+    <section class="sect-dark">
       <div class="container">
-        <div class="tech-detail-block reverse">
-          <div class="tech-detail-content reveal">
-            <p class="section-label-light">02</p>
-            <h2 class="tech-detail-title-light">Motion Intelligence</h2>
-            <p class="tech-detail-text-light">Real-time kinematic planning combined with predictive balance algorithms. The Maidoid walks, turns, reaches, and manipulates objects with fluid, natural motion indistinguishable from human movement at distance.</p>
-            <ul class="tech-specs-light">
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">GAIT CYCLES</span>
-                <span class="spec-value-light">Natural, Variable</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">BALANCE RESPONSE</span>
-                <span class="spec-value-light">&lt; 5 ms</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">WALKING SPEED</span>
-                <span class="spec-value-light">Up to 5.4 km/h</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">STAIR NAVIGATION</span>
-                <span class="spec-value-light">Full Capability</span>
-              </li>
-            </ul>
+        <div class="tech-block reveal">
+          <div class="tech-block-header">
+            <span class="tech-block-num-light">02</span>
+            <span class="tech-block-tag-light">INTELLIGENCE</span>
           </div>
-          <div class="tech-detail-visual reveal">
-            <div class="tech-diagram-light">
-              <svg viewBox="0 0 300 300" fill="none" stroke="white" stroke-width="0.8" opacity="0.7">
-                <!-- Motion path visualization -->
-                <path d="M30 270 Q80 250 100 200 Q120 150 150 150 Q180 150 200 130 Q220 110 270 30" stroke-dasharray="6 4"/>
-                <!-- Waypoints -->
-                <circle cx="30" cy="270" r="5" fill="white" opacity="0.4"/>
-                <circle cx="100" cy="200" r="5" fill="white" opacity="0.4"/>
-                <circle cx="150" cy="150" r="5" fill="white" opacity="0.6"/>
-                <circle cx="200" cy="130" r="5" fill="white" opacity="0.4"/>
-                <circle cx="270" cy="30" r="5" fill="white" opacity="0.4"/>
-                <!-- Walking figure simplified -->
-                <g transform="translate(130, 100)">
-                  <circle cx="20" cy="0" r="8"/>
-                  <line x1="20" y1="8" x2="20" y2="40"/>
-                  <line x1="20" y1="15" x2="5" y2="30"/>
-                  <line x1="20" y1="15" x2="35" y2="28"/>
-                  <line x1="20" y1="40" x2="8" y2="60"/>
-                  <line x1="20" y1="40" x2="32" y2="58"/>
-                </g>
-                <!-- Velocity vectors -->
-                <line x1="170" y1="110" x2="200" y2="95" stroke-width="1.2"/>
-                <polygon points="200,95 194,100 196,93" fill="white" stroke="none"/>
-              </svg>
+          <div class="tech-block-split">
+            <div class="tech-block-main">
+              <h2 class="tech-block-title-light">AI Cognitive Engine</h2>
+              <p class="tech-block-text-light">The brain of every Maidoid is a custom multi-modal neural processor that runs entirely on-device. No cloud dependency. No data transmission. All intelligence is local, private, and fast.</p>
+              <p class="tech-block-text-light">The cognitive engine simultaneously processes visual input, audio streams, language semantics, emotional signals, and environmental context. It does not wait for one input to process before handling the next. This parallel processing is what enables natural, fluid interaction rather than the stilted, turn-based communication of voice assistants.</p>
+              <p class="tech-block-text-light">Over time, the engine develops a detailed model of your household: who lives there, their routines, preferences, and needs. This model improves continuously through federated on-device learning. No two Maidoid units will behave identically after the first week of deployment because each one adapts to its specific home.</p>
+            </div>
+            <div class="tech-block-specs-light">
+              <div class="spec-item-light">
+                <span class="spec-val-light">32+</span>
+                <span class="spec-key-light">Languages Supported</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">&lt;200ms</span>
+                <span class="spec-key-light">Response Latency</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">100%</span>
+                <span class="spec-key-light">On-Device Processing</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">5</span>
+                <span class="spec-key-light">Simultaneous Input Streams</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AI & Conversational Brain -->
-    <section class="section-white">
+    <!-- System 3 -->
+    <section class="sect-light">
       <div class="container">
-        <div class="tech-detail-block">
-          <div class="tech-detail-content reveal">
-            <p class="section-label">03</p>
-            <h2 class="tech-detail-title">AI & Conversational Brain</h2>
-            <p class="tech-detail-text">The Maidoid cognitive system processes language, context, emotion, and intent simultaneously. It learns household patterns, anticipates needs, and communicates with natural clarity and appropriate tone.</p>
-            <ul class="tech-specs">
-              <li class="tech-spec-item">
-                <span class="spec-label">LANGUAGE MODELS</span>
-                <span class="spec-value">Proprietary Multi-Modal</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">LANGUAGES SUPPORTED</span>
-                <span class="spec-value">32+</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">RESPONSE LATENCY</span>
-                <span class="spec-value">&lt; 200 ms</span>
-              </li>
-              <li class="tech-spec-item">
-                <span class="spec-label">ON-DEVICE PROCESSING</span>
-                <span class="spec-value">Full Edge AI</span>
-              </li>
-            </ul>
+        <div class="tech-block reveal">
+          <div class="tech-block-header">
+            <span class="tech-block-num">03</span>
+            <span class="tech-block-tag">PERCEPTION</span>
           </div>
-          <div class="tech-detail-visual reveal">
-            <div class="tech-diagram">
-              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="0.8">
-                <!-- Neural network visualization -->
-                <!-- Input layer -->
-                <circle cx="50" cy="60" r="8"/><text x="50" y="40" text-anchor="middle" font-size="8" fill="currentColor">V</text>
-                <circle cx="50" cy="120" r="8"/><text x="50" y="100" text-anchor="middle" font-size="8" fill="currentColor">A</text>
-                <circle cx="50" cy="180" r="8"/><text x="50" y="160" text-anchor="middle" font-size="8" fill="currentColor">L</text>
-                <circle cx="50" cy="240" r="8"/><text x="50" y="220" text-anchor="middle" font-size="8" fill="currentColor">S</text>
-                <!-- Hidden layer 1 -->
-                <circle cx="130" cy="80" r="6"/>
-                <circle cx="130" cy="140" r="6"/>
-                <circle cx="130" cy="200" r="6"/>
-                <!-- Hidden layer 2 -->
-                <circle cx="200" cy="100" r="6"/>
-                <circle cx="200" cy="170" r="6"/>
-                <!-- Output -->
-                <circle cx="260" cy="150" r="10"/>
-                <!-- Connections (selected for clarity) -->
-                <line x1="58" y1="60" x2="124" y2="80" opacity="0.3"/>
-                <line x1="58" y1="60" x2="124" y2="140" opacity="0.2"/>
-                <line x1="58" y1="120" x2="124" y2="80" opacity="0.2"/>
-                <line x1="58" y1="120" x2="124" y2="140" opacity="0.3"/>
-                <line x1="58" y1="120" x2="124" y2="200" opacity="0.2"/>
-                <line x1="58" y1="180" x2="124" y2="140" opacity="0.2"/>
-                <line x1="58" y1="180" x2="124" y2="200" opacity="0.3"/>
-                <line x1="58" y1="240" x2="124" y2="200" opacity="0.3"/>
-                <line x1="136" y1="80" x2="194" y2="100" opacity="0.3"/>
-                <line x1="136" y1="80" x2="194" y2="170" opacity="0.2"/>
-                <line x1="136" y1="140" x2="194" y2="100" opacity="0.3"/>
-                <line x1="136" y1="140" x2="194" y2="170" opacity="0.3"/>
-                <line x1="136" y1="200" x2="194" y2="170" opacity="0.3"/>
-                <line x1="206" y1="100" x2="250" y2="150" opacity="0.4"/>
-                <line x1="206" y1="170" x2="250" y2="150" opacity="0.4"/>
-              </svg>
+          <div class="tech-block-split">
+            <div class="tech-block-main">
+              <h2 class="tech-block-title">Vision & Perception</h2>
+              <p class="tech-block-text">Maidoid perceives the world through a fusion of stereo cameras, LiDAR, ultrasonic sensors, and infrared arrays. This multi-modal approach creates a rich, three-dimensional understanding of any environment in real time.</p>
+              <p class="tech-block-text">The vision system identifies thousands of household objects, reads labels and screens, recognizes faces and expressions, and tracks moving objects including children and pets. Depth perception accuracy reaches sub-centimeter levels at ranges up to 10 meters.</p>
+              <p class="tech-block-text">Environmental mapping builds a continuously updated model of the home. Maidoid knows where every piece of furniture is, what has moved since the last scan, and where obstacles might appear. This spatial intelligence is the foundation for all movement planning and task execution.</p>
+            </div>
+            <div class="tech-block-specs">
+              <div class="spec-item">
+                <span class="spec-val">360&deg;</span>
+                <span class="spec-key">Environmental Awareness</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">10m</span>
+                <span class="spec-key">Depth Range</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">60fps</span>
+                <span class="spec-key">Processing Rate</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">1000+</span>
+                <span class="spec-key">Object Categories</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Human Interaction Safety -->
-    <section class="section-black">
+    <!-- System 4 -->
+    <section class="sect-dark">
       <div class="container">
-        <div class="tech-detail-block reverse">
-          <div class="tech-detail-content reveal">
-            <p class="section-label-light">04</p>
-            <h2 class="tech-detail-title-light">Human Interaction Safety</h2>
-            <p class="tech-detail-text-light">Every interaction is governed by a multi-layered safety framework. Force-limiting actuators, proximity detection, and behavioral boundaries ensure that the Maidoid operates within safe parameters at all times.</p>
-            <ul class="tech-specs-light">
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">FORCE LIMITING</span>
-                <span class="spec-value-light">Active, All Joints</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">PROXIMITY SENSORS</span>
-                <span class="spec-value-light">360-Degree Coverage</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">EMERGENCY STOP</span>
-                <span class="spec-value-light">Triple Redundant</span>
-              </li>
-              <li class="tech-spec-item-light">
-                <span class="spec-label-light">SAFETY CERTIFICATION</span>
-                <span class="spec-value-light">ISO 13482 Compliant</span>
-              </li>
-            </ul>
+        <div class="tech-block reveal">
+          <div class="tech-block-header">
+            <span class="tech-block-num-light">04</span>
+            <span class="tech-block-tag-light">SAFETY</span>
           </div>
-          <div class="tech-detail-visual reveal">
-            <div class="tech-diagram-light">
-              <svg viewBox="0 0 300 300" fill="none" stroke="white" stroke-width="0.8" opacity="0.7">
-                <!-- Shield / safety visualization -->
-                <path d="M150 30 L260 80 L250 200 L150 270 L50 200 L40 80 Z" stroke-width="1"/>
-                <path d="M150 60 L230 100 L222 190 L150 240 L78 190 L70 100 Z" stroke-dasharray="4 4" opacity="0.4"/>
-                <!-- Checkmark -->
-                <path d="M110 150 L140 180 L200 110" stroke-width="2.5" opacity="0.9"/>
-                <!-- Sensor points -->
-                <circle cx="150" cy="30" r="3" fill="white" opacity="0.5"/>
-                <circle cx="260" cy="80" r="3" fill="white" opacity="0.5"/>
-                <circle cx="250" cy="200" r="3" fill="white" opacity="0.5"/>
-                <circle cx="150" cy="270" r="3" fill="white" opacity="0.5"/>
-                <circle cx="50" cy="200" r="3" fill="white" opacity="0.5"/>
-                <circle cx="40" cy="80" r="3" fill="white" opacity="0.5"/>
-              </svg>
+          <div class="tech-block-split">
+            <div class="tech-block-main">
+              <h2 class="tech-block-title-light">Human Interaction Safety</h2>
+              <p class="tech-block-text-light">Safety is not a feature of Maidoid. It is the architectural foundation upon which every other system is built. Our safety framework operates at the hardware level, the software level, and the behavioral level simultaneously.</p>
+              <p class="tech-block-text-light">At the hardware level, every actuator incorporates force-limiting mechanisms that physically cannot exceed safe thresholds. At the software level, a dedicated safety processor monitors all systems independently of the main cognitive engine and can halt any operation within 3 milliseconds. At the behavioral level, proximity zones define how Maidoid adjusts its speed, force, and trajectory based on the proximity and identity of humans nearby.</p>
+              <p class="tech-block-text-light">All safety systems are triple-redundant. If any single system fails, two independent backups ensure safe operation. Our emergency stop is mechanical, electronic, and voice-activated simultaneously.</p>
+            </div>
+            <div class="tech-block-specs-light">
+              <div class="spec-item-light">
+                <span class="spec-val-light">3ms</span>
+                <span class="spec-key-light">Emergency Halt Time</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">3x</span>
+                <span class="spec-key-light">Redundancy Level</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">ISO 13482</span>
+                <span class="spec-key-light">Safety Certification</span>
+              </div>
+              <div class="spec-item-light">
+                <span class="spec-val-light">360&deg;</span>
+                <span class="spec-key-light">Proximity Coverage</span>
+              </div>
             </div>
           </div>
         </div>
@@ -258,11 +172,16 @@ export const TechnologyPage = () => {
     </section>
 
     <!-- CTA -->
-    <section class="section-white cta-section">
+    <section class="sect-cta">
       <div class="container">
-        <h2 class="cta-headline reveal">Explore Our Product</h2>
-        <p class="cta-sub reveal">See how these systems come together in a single integrated platform.</p>
-        <a href="/product" class="btn btn-dark reveal">VIEW PRODUCT</a>
+        <div class="cta-block reveal">
+          <h2 class="cta-title">See It in Action</h2>
+          <p class="cta-text">Schedule a private demonstration at our Dubai facility.</p>
+          <div class="cta-actions">
+            <a href="/contact" class="btn btn-white">REQUEST DEMO<span class="btn-arrow">&rarr;</span></a>
+            <a href="/product" class="btn btn-ghost-light">VIEW PRODUCT SPECS</a>
+          </div>
+        </div>
       </div>
     </section>
   `

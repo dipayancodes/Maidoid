@@ -10,7 +10,7 @@ export const HomePage = () => {
           <h1 class="hero-headline fade-in d1">Human<br>Intelligence.<br><span class="hero-headline-accent">Engineered.</span></h1>
           <p class="hero-sub fade-in d2">We design and manufacture human-scale humanoid robots that perform domestic tasks as intelligent home assistants. Precision-built in Dubai for the world.</p>
           <div class="hero-actions fade-in d3">
-            <a href="/technology" class="btn btn-primary">EXPLORE TECHNOLOGY<span class="btn-arrow">&rarr;</span></a>
+            <a href="/technology" class="btn btn-primary"><span>EXPLORE TECHNOLOGY</span><span class="btn-arrow">&rarr;</span></a>
             <a href="/contact" class="btn btn-ghost">REQUEST DEMO</a>
           </div>
           <div class="hero-stats fade-in d4">
@@ -32,6 +32,13 @@ export const HomePage = () => {
         </div>
         <div class="hero-right">
           <div class="robot-container" id="robotContainer">
+            <!-- Orbit rings -->
+            <div class="robot-ring robot-ring-1" aria-hidden="true"></div>
+            <div class="robot-ring robot-ring-2" aria-hidden="true"></div>
+            <div class="robot-ring robot-ring-3" aria-hidden="true"></div>
+            <!-- Orbit particles -->
+            <div class="robot-orbit" aria-hidden="true"></div>
+            <div class="robot-orbit robot-orbit-2" aria-hidden="true"></div>
             <div class="robot-glow"></div>
             <div class="robot-shadow"></div>
             <div class="robot" id="heroRobot">
@@ -274,7 +281,7 @@ export const HomePage = () => {
           </div>
         </div>
         <div class="systems-cta reveal">
-          <a href="/technology" class="btn btn-primary">DEEP DIVE INTO TECHNOLOGY<span class="btn-arrow">&rarr;</span></a>
+          <a href="/technology" class="btn btn-primary"><span>DEEP DIVE INTO TECHNOLOGY</span><span class="btn-arrow">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -367,7 +374,7 @@ export const HomePage = () => {
           <h2 class="cta-title">The Future Begins at Home.</h2>
           <p class="cta-text">Join the companies, institutions, and early adopters preparing for the next era of domestic technology.</p>
           <div class="cta-actions">
-            <a href="/contact" class="btn btn-white">REQUEST INFORMATION<span class="btn-arrow">&rarr;</span></a>
+            <a href="/contact" class="btn btn-white"><span>REQUEST INFORMATION</span><span class="btn-arrow">&rarr;</span></a>
             <a href="/product" class="btn btn-ghost-light">VIEW PRODUCT</a>
           </div>
         </div>
